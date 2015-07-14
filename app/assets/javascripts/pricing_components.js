@@ -6,7 +6,6 @@ window.PricingCommonsStarter = require('./components/pricing/pricing_commons_sta
 window.PricingCommonsUnlimited = require('./components/pricing/pricing_commons_unlimited');
 window.PricingDedicatedDesk = require('./components/pricing/pricing_dedicated_desk');
 window.PricingDedicatedOffice = require('./components/pricing/pricing_dedicated_office');
-window.PricingFaq = require('./components/pricing/pricing_faq');
 
 // Add routing here
 window.PricingRouter = require('./components/pricing_router');
