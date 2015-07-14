@@ -4,7 +4,9 @@
   <title>ReactRouterTest</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
-  <%= javascript_include_tag 'pricing' %>
+  <% (@page_scripts || []).each do |script| %>
+    <%= javascript_include_tag "#{script}" %>
+  <% end %>
   <%= csrf_meta_tags %>
 </head>
 <body>

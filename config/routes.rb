@@ -4,7 +4,16 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'application#index'
-  get "/*path" => "application#index"
+
+  [
+    "/pricing",
+    "/commons-starter-pricing",
+    "/commons-unlimited-pricing",
+    "/dedicated-desks-pricing",
+    "/offices-pricing"
+  ].each do |path|
+    get "/#{path}", to: "pages#pricing", id: "pricing", format: false
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
