@@ -1,1 +1,1 @@
-//= require_tree ./components
+require('./pricing_components');

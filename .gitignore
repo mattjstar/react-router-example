@@ -7,6 +7,14 @@
 # Ignore bundler config.
 /.bundle
 
+/public/assets
+/node_modules
+browserify-cache.json
+npm-debug.log
+
+# Remove bower components:
+/vendor/assets/bower_components
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
