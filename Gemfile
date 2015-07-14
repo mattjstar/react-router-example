@@ -38,6 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'fog', '~>1.20', require: 'fog/aws/storage'
+gem 'asset_sync'
 gem 'therubyracer', platforms: :ruby
 gem 'react-rails', '~> 1.0'
 gem 'react-router-rails', '~>0.13.3'
