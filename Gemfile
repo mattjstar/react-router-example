@@ -1,5 +1,5 @@
+ruby '2.1.6'
 source 'https://rubygems.org'
-
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -38,8 +38,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'therubyracer', platforms: :ruby
 gem 'react-rails', '~> 1.0'
-gem 'react-router-rails', '0.13.3'
+gem 'react-router-rails', '~>0.13.3'
+gem 'browserify-rails', '~> 0.9.1'
 
 group :production, :staging do
   gem 'rails_12factor'
